@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>A H O R C A D O</title>
+  </head>
+  <body>
+    <section class="main frist-screen">
+      <h1 class="title_main">AHORCADO</h1>
+      <button id="start">COmEZAR</button>
+    </section>
+    <section class="main second-screen hidden">
+      <div class="datos">
+        <div class="scores">
+          <div class="title">
+            <h2>PUNTUACIONS</h2>
+          </div>
+          <div class="high">
+            <p>MAIS ALTA: <span id="mas_alta"></span></p></p>
+          </div>
+          <div class="actual">
+            <p>ACTUAL: <span id="actual"></span></p>
+          </div>
+        </div>
+        <div class="lifes">
+          <span id="life_count"></span>
+        </div>
+      </div>
+      <div class="letras">
+        <div id="adivinar"></div>
+        <div id="abc"></div>
+        <p id="categoria"></p>
+      </div>
+    </section>
+    <div class="ventana win hidden">
+      <h2 class="titulo_ventana">Ganaches!</h2>
+      <button class="boton_ventana retry1">Seguinte</button>
+      <button class="boton_ventana exit1">Sair</button>
+    </div>
+    <div class="ventana loose hidden">
+      <h2 class="titulo_ventana">Perdiches</h2>
+      <button class="boton_ventana retry2">Reintentar</button>
+      <button class="boton_ventana exit2">Sair</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
